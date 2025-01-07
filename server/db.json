@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "MacBook",
+      "unit": "Pcs",
+      "price": 1500
+    },
+    {
+      "id": 2,
+      "name": "HP Pavilion Gaming",
+      "unit": "Pcs",
+      "price": 1200
+    },
+    {
+      "id": 3,
+      "name": "ASUS Zenbook",
+      "unit": "Pcs",
+      "price": 1800
+    },
+    {
+      "id": 3,
+      "name": "Surface 7 Pro",
+      "unit": "Pcs",
+      "price": 800
+    },
+    {
+      "id": 4,
+      "name": "Surface X",
+      "unit": "Pcs",
+      "price": 990
+    }
+  ]
+}
