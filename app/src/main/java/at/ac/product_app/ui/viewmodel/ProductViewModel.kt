@@ -7,7 +7,7 @@ import kotlinx.coroutines.launch
 
 class ProductViewModel : ViewModel() {
     private val _products = MutableStateFlow<List<Product>>(emptyList())
-    val todos: StateFlow<List<Product>> get() = _products
+    val products: StateFlow<List<Product>> get() = _products
 
     init {
         fetchProducts()
