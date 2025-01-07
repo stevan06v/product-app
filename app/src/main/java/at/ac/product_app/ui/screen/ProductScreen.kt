@@ -8,18 +8,14 @@ import androidx.compose.ui.unit.dp
 import at.ac.product_app.data.model.Product
 
 @Composable
-fun ProductScreen(viewModel: ProductViewModel = androidx.lifecycle.viewmodel.compose.viewModel()) {
+fun ProductScreen(viewModel: ProductViewModel = androidx.lifecycle.viewmodel.compose.viewModel(), modifier: Modifier) {
     val products = viewModel.products.collectAsState()
-
     LazyColumn(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
+        modifier = Modifier.fillMaxSize().padding(16.dp).then(modifier),
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         items(products.value) { product ->
-            Product(product.id,
-                product.name,
-                product.unit,
-                product.price)
+            ProductItem(product)
         }
     }
 }

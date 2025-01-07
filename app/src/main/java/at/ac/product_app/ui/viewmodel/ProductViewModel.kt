@@ -23,4 +23,7 @@ class ProductViewModel : ViewModel() {
             }
         }
     }
+    fun isProductsAvailable(): Boolean{
+        return _products.value.isNotEmpty();
+    }
 }
